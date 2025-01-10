@@ -6,3 +6,4 @@ export default defineConfig({
   base: "/tara-health-website/",
   plugins: [react()],
 })
+  
