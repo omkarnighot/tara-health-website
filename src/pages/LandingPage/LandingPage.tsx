@@ -8,6 +8,7 @@ import HeroSection from "./components/HeroSection";
 import ProgramsSection from "./components/ProgramsSection";
 import FounderVideo from "./components/FounderVideo";
 import Address from "./components/Address";
+import React from "react";
 
 const LandingPage = () => {
     return (

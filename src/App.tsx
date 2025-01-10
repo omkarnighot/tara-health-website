@@ -2,6 +2,8 @@ import { Box, ThemeProvider } from '@mui/material'
 import './App.css'
 import LandingPage from './pages/LandingPage/LandingPage'
 import { defaultTheme } from './muiTheme'
+import React from "react";
+
 
 function App() {
 
