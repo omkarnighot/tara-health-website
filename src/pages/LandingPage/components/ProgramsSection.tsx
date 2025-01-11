@@ -15,7 +15,7 @@ const foundersWordsBullets = [
 const FoundersWords = () => {
     return (
         <Box className="flex flex-col w-3/4 gap-10 justify-center items-center">
-            <Box className="flex items-center">
+            <Box className="flex flex-col md:flex-row items-center">
                 <Box className="flex flex-col gap-10 w-3/5">
                     <span>
                         Hi, I am Vaishnavi Baravkar, a certified Clinical nutritionist, passionate about helping individuals achieve their healthiest, happiest selves. I believe that true health goes beyond just eating nutritious food—it’s about embracing a holistic approach to wellness. This includes balanced nutrition, regular physical activity, mental well-being, proper sleep, stress management, and fostering positive relationships.
@@ -32,7 +32,7 @@ const FoundersWords = () => {
                             />)}
                     </Box>
                 </Box>
-                <Box className="h-full w-2/5 relative">
+                <Box className="h-full w-2/5 relative hidden lg:block">
                     <img src="circles.svg" className="absolute bottom-5 left-5 z-0"></img>
                     <img src="founder.jpeg" className="absolute bottom-0 z-50 rounded-3xl  shadow-xl"></img>
                 </Box>
@@ -51,7 +51,7 @@ const ProgramsSection = () => {
             <img src="shape1.svg" className="m-0 p-0"></img>
             <PricingSection />
             <Box className="bg-beige w-full flex flex-col py-8 mb-[-0.1%]">
-                <img src="founder.svg" className="w-3/5"></img>
+                <img src="founder.svg" className="w-5/6 md:w-3/5"></img>
                 <Box className="flex justify-center w-full mt-20">
                     <FoundersWords />
                 </Box>

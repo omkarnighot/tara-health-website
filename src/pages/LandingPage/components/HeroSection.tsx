@@ -2,7 +2,7 @@ import { Box, Button } from "@mui/material";
 
 export const NavBar = () => {
     return (
-        <Box className="flex flex-wrap justify-center gap-5 md:gap-16 font-semibold">
+        <Box className="flex flex-wrap justify-center gap-5 md:gap-36 font-semibold">
             <Box>
                 About Us
             </Box>

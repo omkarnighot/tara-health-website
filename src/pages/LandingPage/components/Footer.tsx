@@ -15,9 +15,12 @@ const Footer = () => {
     return (
         <>
             <Box className="bg-beige flex flex-col items-center justify-center h-[40vh] mt-5 gap-10">
-                <img src="Frame 5.png"></img>
+                <img src="tara_logo.svg"></img>
                 <NavBar />
-                <Box>
+                <Box className="flex gap-10">
+                    <SocialMediaIcon />
+                    <SocialMediaIcon />
+                    <SocialMediaIcon />
                     <SocialMediaIcon />
                 </Box>
             </Box>
