@@ -30,10 +30,10 @@ const PricingCard = (props: { planName: string, planDescription: string, planPri
 
     return (
         <Box 
-            className={`flex flex-col items-center h-[45vh] gap-10 shadow-lg rounded m-1 mx-2 w-full md:w-[45%] 2xl:w-1/5 p-5 
+            className={`flex flex-col items-center h-[57vh] gap-10 shadow-lg rounded m-1 mx-2 w-full md:w-1/5 p-5 
                 ${planName === "Custom" ? "bg-green1/5":'bg-[#fff]'} 
                 ${planName === "3 months" ?`border-3 border-green-2` : ""}`}>
-            <Box className="flex items-center text-3xl font-semibold mt-2">
+            <Box className="flex items-center text-3xl text-center font-semibold mt-2">
                 {planName}
             </Box>
             <Box className="h-2/5 flex items-start text-sm text-center">
@@ -57,7 +57,7 @@ const PricingCard = (props: { planName: string, planDescription: string, planPri
 
 const PricingCardsSection = () => {
     return (
-        <Box className="flex flex-col md:flex-row justify-center my-10 w-full gap-2 p-2 overflow-scroll">
+        <Box className="flex flex-col md:flex-row justify-center my-10 w-full gap-2 p-2 overflow-hidden">
             {pricingData.map((data) => {
                 const {planName, planDescription, planPrice} = data
                 return (
@@ -70,15 +70,15 @@ const PricingCardsSection = () => {
 
 const PricingSection = () => {
     return (
-        <Box className="relative flex flex-col w-full items-center justify-center bg-beige mt-[-1%]">
+        <Box className="relative flex flex-col w-full items-center justify-center bg-beige mt-[-1%] overflow-hidden">
             <Box className="font-semibold text-3xl md:text-5xl text-center">
                 We offer great <span className="text-5xl md:text-7xl text-green-2">Price</span> plan for<br /> various needs
             </Box>
             <Box className="px-5">
                 <PricingCardsSection />
             </Box>
-            <Box className="absolute bottom-10 right-0 hidden md:block">
-                <img src="oranges.png" alt="" className="w-[35vh] lg:w-[50vh]" />
+            <Box className="absolute bottom-10 right-0 hidden lg:block">
+                <img src="oranges.png" alt="" className="w-[35vh] lg:w-[42vh]" />
             </Box>
         </Box>
     )

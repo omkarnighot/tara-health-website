@@ -1,22 +1,22 @@
 import { Box, Button } from "@mui/material";
 
-export const NavBar = () => {
+export const NavBar = (props:{displayLogo?:boolean}) => {
     return (
         <Box className="flex flex-wrap justify-start items-center gap-10 md:gap-20 font-semibold">
-            <img src="tara_logo.svg" className="hidden md:block h-[60px]"></img>
+            {props.displayLogo && <img src="tara_logo_new.svg" className="hidden md:block h-[60px]"></img>}
 
-            <Box>
+            <a href="#about_us">
                 About Us
-            </Box>
-            <Box>
+            </a>
+            <a href="#programs">
                 Programs
-            </Box>
+            </a>
             {/* <Box>
                 FAQ's
             </Box> */}
-            <Box>
+            <a href="#contact_us">
                 Contact Us
-            </Box>
+            </a>
         </Box>
     )
 }
@@ -25,11 +25,11 @@ const HeroSection = () => {
     return (
         <Box className="relative w-full flex flex-col gap-20 lg:gap-16 2xl:gap-32 h-[90vh] bg-gradient-to-r from-[#fff] from-10% to-beige-3 to-86% overflow-hidden">
             <Box className="flex justify-center md:justify-start w-full pt-16 px-8 lg:px-16 z-50">
-                <NavBar />
+                <NavBar displayLogo />
             </Box>
             <Box className="flex flex-col py-10 md:p-10 w-full justify-start items-center md:items-start mt-0 px-5 md:px-20 z-50">
                 <Box className="my-8 xl:my-12 flex flex-col gap-8 items-center md:items-start">
-                    <img src="tara_logo.svg" className="h-[80px] md:hidden"></img>
+                    <img src="tara_logo_new.svg" className="h-[80px] md:hidden"></img>
                     <Box className="flex flex-col gap-5 text-center md:text-left">
 
                         <h1 className="font-bold text-green-2  text-5xl xl:text-7xl ">Tara Health Consultations</h1>

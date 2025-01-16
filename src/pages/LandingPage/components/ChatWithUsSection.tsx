@@ -21,7 +21,7 @@ export const BulletPoint = (props: { text: string, iconUrl?: string, className?:
 
 const ChatWithUsSection = () => {
     return (
-        <Box className="bg-beige flex flex-col justify-center items-center text-center p-10 gap-10 w-full">
+        <div className="bg-beige flex flex-col justify-center items-center text-center p-10 gap-10 w-full" id="contact_us">
             <span className="text-2xl">
                 Invest in yourself
             </span>
@@ -42,7 +42,7 @@ const ChatWithUsSection = () => {
                     return <BulletPoint text={bullet} />
                 })}
             </Box>
-        </Box>
+        </div>
     )
 }
 
