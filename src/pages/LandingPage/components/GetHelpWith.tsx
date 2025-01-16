@@ -64,7 +64,7 @@ const PlansForCard = () => {
 
 const GetHelpWith = () => {
     return (
-        <Box className="flex flex-col justify-center w-full items-center gap-20 h-screen my-5">
+        <Box className="flex flex-col justify-center w-full items-center gap-20 py-10 my-5">
             <Box className="flex justify-center items-center px-8 pb-10 w-full grow md:w-5/6">
                 <Box className="flex flex-col items-center gap-12 lg:w-1/2">
                     <TextOverlap background={"lifestyle"} heading={"Get Help With"} />
