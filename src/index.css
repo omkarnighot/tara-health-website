@@ -23,3 +23,18 @@ body {
 .caveat {
   font-family: "Caveat", serif;
 }
+
+@font-face {
+  font-family: "CenturyGothic";
+  src: url(./assets/fonts/CenturyGothic.ttf)format("truetype");
+}
+
+@font-face {
+  font-family: "CenturyGothic";
+  src: url(./assets/fonts/centurygothic_bold.ttf)format("truetype");
+}
+
+
+.gothic{
+  font-family: "CenturyGothic";
+}

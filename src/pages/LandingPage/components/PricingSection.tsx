@@ -27,6 +27,7 @@ const pricingData = [
 
 const PricingCard = (props: { planName: string, planDescription: string, planPrice: number | undefined }) => {
     const { planName, planDescription, planPrice } = props
+    const message = `Hello, I am interested in the ${planName} plan. Could you please provide more details?`;
 
     return (
         <Box 
@@ -46,10 +47,13 @@ const PricingCard = (props: { planName: string, planDescription: string, planPri
                     {planPrice?.toLocaleString() ?? ""}
             </Box>
             <Box className="h-1/5 mb-5 z-50">
-                <button className="hover:bg-green-2 hover:text-[#fff] border-2 rounded-xl p-2 px-8 font-semibold">
+                <a 
+                    className="hover:bg-green-2 hover:text-[#fff] border-2 rounded-xl p-2 px-8 font-semibold"
+                    href={`https://wa.me/+917028865139/?text=${encodeURIComponent(message)}`}
+                    >
 
                 Contact us
-                </button>
+                </a>
             </Box>
         </Box>
     )

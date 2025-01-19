@@ -32,9 +32,9 @@ const HeroSection = () => {
                     <img src="tara_logo_new.svg" className="h-[80px] md:hidden"></img>
                     <Box className="flex flex-col gap-5 text-center md:text-left">
 
-                        <h1 className="font-bold text-green-2  text-5xl xl:text-7xl ">Tara Health Consultations</h1>
+                        <h1 className="font-bold text-green-2  text-5xl xl:text-7xl gothic">Tara Health Consultations</h1>
                         <h3 className="caveat text-3xl md:text-3xl xl:text-5xl font-semibold">Wellness beyond diet...</h3>
-                        <span className=" font-semibold">Get your custom plans &
+                        <span className="font-semibold">Get your custom plans &
                             one-on-one guidance from our experts</span>
                     </Box>
                 </Box>

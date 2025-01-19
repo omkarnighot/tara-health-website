@@ -1,9 +1,9 @@
 import { Box, Button } from "@mui/material"
 
 const bulletList = [
-    "No carash Diet",
+    "No crash Diet",
     "No weight-loss pills",
-    "No apetite blocker powders"
+    "No appetite blocker powders"
 ]
 
 export const BulletPoint = (props: { text: string, iconUrl?: string, className?: string, imageClassName?: string }) => {
@@ -20,6 +20,8 @@ export const BulletPoint = (props: { text: string, iconUrl?: string, className?:
 }
 
 const ChatWithUsSection = () => {
+    const message = `Hello, I want to start my wellness journey. Could you please provide more details?`
+
     return (
         <div className="bg-beige flex flex-col justify-center items-center text-center p-10 gap-10 w-full" id="contact_us">
             <span className="text-2xl">
@@ -31,7 +33,7 @@ const ChatWithUsSection = () => {
                 and
                 <span className="text-green-1 text-3xl font-bold"> confidence</span>
             </span>
-            <Button href="https://wa.me/+917028865139">
+            <Button href={`https://wa.me/+917028865139/?text=${encodeURIComponent(message)}`}>
                 <span className="mx-2">
                     <img src="whatsappLogo.png" className="h-6"></img>
                 </span>

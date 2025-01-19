@@ -32,9 +32,9 @@ const FoundersWords = () => {
                             />)}
                     </Box>
                 </Box>
-                <Box className="h-full w-2/5 relative hidden lg:block">
+                <Box className="h-full w-1/2 lg:w-1/3 2xl:w-1/4 p-5 relative hidden lg:block">
                     <img src="circles.svg" className="absolute bottom-5 left-5 z-0"></img>
-                    <img src="founder.jpeg" className="absolute bottom-0 z-50 rounded-3xl  shadow-xl"></img>
+                    <img src="founder2.jpeg" className="absolute bottom-0 z-50 rounded-3xl shadow-xl"></img>
                 </Box>
             </Box>
             <span>

@@ -37,7 +37,7 @@ const SocialMediaIcon = (props: { icon: JSX.Element, link: string }) => {
 const Footer = () => {
     return (
         <>
-            <Box className="bg-beige flex flex-col items-center justify-center h-[40vh] mt-5 gap-10">
+            <Box className="bg-beige flex flex-col items-center justify-center mt-5 py-10 gap-10">
                 <img src="tara_logo_new.svg"></img>
                 <NavBar />
                 <img src="separator.svg"></img>
