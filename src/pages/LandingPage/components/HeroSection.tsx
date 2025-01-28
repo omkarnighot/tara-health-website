@@ -22,6 +22,8 @@ export const NavBar = (props:{displayLogo?:boolean}) => {
 }
 
 const HeroSection = () => {
+    const message = `Hello, I want to start my wellness journey. Could you please provide more details?`
+
     return (
         <Box className="relative w-full flex flex-col gap-4 lg:gap-16 2xl:gap-32 h-[90vh] bg-gradient-to-r from-[#fff] from-10% to-beige-3 to-86% overflow-hidden">
             <Box className="flex justify-center md:justify-start w-full pt-16 px-8 lg:px-16 z-50">
@@ -38,7 +40,9 @@ const HeroSection = () => {
                             one-on-one guidance from our experts</span>
                     </Box>
                 </Box>
-                <Button className="!mt-2 !px-10">Get Started</Button>
+                <Button className="!mt-2 !px-10" href={`https://wa.me/+917028865139/?text=${encodeURIComponent(message)}`}>
+                    Get Started
+                </Button>
             </Box>
             <Box className="absolute right-[-15%] md:right-[-33%] lg:right-[-10%] xl:right-[-25%] 2xl:right-[-30%] bottom-0 h-[88%] w-[128%] lg:w-3/4 z-10 xl:z-30">
                 <img src="heroImage.png" className="h-full"></img>
