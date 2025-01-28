@@ -23,7 +23,7 @@ export const NavBar = (props:{displayLogo?:boolean}) => {
 
 const HeroSection = () => {
     return (
-        <Box className="relative w-full flex flex-col gap-20 lg:gap-16 2xl:gap-32 h-[90vh] bg-gradient-to-r from-[#fff] from-10% to-beige-3 to-86% overflow-hidden">
+        <Box className="relative w-full flex flex-col gap-4 lg:gap-16 2xl:gap-32 h-[90vh] bg-gradient-to-r from-[#fff] from-10% to-beige-3 to-86% overflow-hidden">
             <Box className="flex justify-center md:justify-start w-full pt-16 px-8 lg:px-16 z-50">
                 <NavBar displayLogo />
             </Box>
